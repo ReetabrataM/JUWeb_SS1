@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadavpur University | Kolkata</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .auro{
+            height: 150px;
+            width:900px;
+
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #800000; 
+            color: white;
+            padding: 8px 10%;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Header & Branding */
+        header {
+            background: white;
+            padding: 20px 10%;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        .logo img {
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        .university-name h1 {
+            margin: 0;
+            color: #800000;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .university-name p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            padding: 0 10%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffcc00;
+            color: #333;
+        }
+
+        /* Hero Banner */
+        .hero {
+            width: 100%;
+            height: 400px;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Aurobindo.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            background: rgba(128, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: #800000;
+            color: white;
+            padding: 40px 10%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-item h2 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffcc00;
+        }
+
+        /* Main Body Container */
+        .container {
+            display: flex;
+            padding: 30px 10%;
+            gap: 30px;
+        }
+
+        .main-content {
+            flex: 2;
+        }
+
+        .content-card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        h3 {
+            color: #800000;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Grid for Achievements & Clubs */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .grid-item {
+            border-left: 4px solid #800000;
+            padding-left: 15px;
+            background: #fafafa;
+            padding: 15px;
+        }
+
+        .club-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #eee;
+            transition: 0.3s;
+        }
+
+        .club-card:hover {
+            border-color: #800000;
+            background: #fff;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+        }
+
+        .sidebar-section {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-top: 5px solid #800000;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            padding: 10px 0;
+            border-bottom: 1px dotted #ccc;
+            font-size: 14px;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>Email: registrar@jadavpuruniversity.in | Phone: +91 33 2414 6666</span>
+        <span>Kolkata, West Bengal, India</span>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="Jadavpur_University_Logo.svg.jpg" alt="JU Logo">
+        </div>
+        <div class="university-name">
+            <h1>Jadavpur University</h1>
+            <p>To Know Is To Grow</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-item">
+            <h2>#1</h2>
+            <p>State University in India</p>
+        </div>
+        <div class="stat-item">
+            <h2>115+</h2>
+            <p>Years of Legacy</p>
+        </div>
+        <div class="stat-item">
+            <h2>4.5/5</h2>
+            <p>Placement Rating</p>
+        </div>
+        <div class="stat-item">
+            <h2>17k+</h2>
+            <p>Active Students</p>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="main-content">
+            <div class="content-card">
+                <h3>Welcome to Jadavpur University</h3>
+                <p>Jadavpur University is at present an internationally recognized premier university of the country. It emerged from the National Council of Education, Bengal which was set up in 1906. In 1955, the Government of West Bengal, with the concurrence of the Govt. of India, established it as a unitary teaching University.</p>
+                <img src="WhatsApp Image 2026-04-02 at 15.32.05.jpeg" alt="Campus Life" style="width:100%; border-radius:4px; margin-top:15px;">
+            </div>
+
+            <div class="content-card">
+                <h3>Global Achievements</h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h4 style="margin: 0; color: #800000;">QS World Rankings</h4>
+                        <p style="font-size: 14px;">Consistently ranked among the top global institutions for Engineering and Excellence in Arts.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4 style="margin: 0; color: #800000;">Research Excellence</h4>
+                        <p style="font-size: 14px;">Highest number of research publications among state universities in Eastern India.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>Student Culture</h3>
+                <p>Campus life at JU is defined by its vibrant student-led initiatives. From technical innovation to the performing arts, there is a space for every talent.</p>
+                <div class="grid-container" style="grid-template-columns: 1fr 1fr 1fr;">
+                    <div class="club-card">
+                        <strong style="color: #800000;">Sanskriti</strong>
+                        <p style="font-size: 12px;">The flagship cultural festival of FETSU.</p>
+                    </div>
+                    <div class="club-card">
+                        <strong style="color: #800000;">Srijan</strong>
+                        <p style="font-size: 12px;">Annual Tech fest of JU</p>
+                    </div>
+                    <div class="club-card">
+                        <strong style="color: #800000;">UTurn & CIIPPUS</strong>
+                        <p style="font-size: 12px;">Freshers eveent of FETSU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3>Latest Notifications</h3>
+                <div class="news-item">
+                    <a href="#">• Admission Notice for UG IT & Engineering 2026</a>
+                </div>
+                <div class="news-item">
+                    <a href="#">• Examination Schedule for Semester 2 (Basic Electronics)</a>
+                </div>
+                <div class="news-item">
+                    <a href="#">• Research Grant opportunities in Blockchain & ML</a>
+                </div>
+                <div class="news-item">
+                    <a href="#">• International Seminar on Information Technology</a>
+                </div>
+            </div>
+
+            <div class="sidebar-section" style="background-color: #fffde7;">
+                <h3>Research Centers</h3>
+                <ul style="padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                    <li>School of Mobile Computing</li>
+                    <li>Center for Distributed Computing</li>
+                    <li>School of Nuclear Studies</li>
+                    <li>Center for Quality Management</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jadavpur University, Kolkata. All Rights Reserved.</p>
+        <p style="font-size: 12px; color: #888;">188, Raja S.C. Mallick Rd, Kolkata, West Bengal 700032</p>
+    </footer>
+
+</body>
+</html>
